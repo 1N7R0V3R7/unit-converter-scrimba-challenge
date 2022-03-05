@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="h-screen flex justify-center items-center bg-purple-300">
+    <section class="text-white text-center max-w-lg">
+        <header class="bg-gradient-to-r from-[#ef00a5] to-[#8c00ee] py-12">
+            <div class="font-bold text-lg">
+                Metric/Imperial unit conversion
+            </div>
+            <input 
+                type="number" 
+                class="text-center placeholder-white w-full text-7xl bg-transparent outline outline-hidden outline-transparent"
+                id="input-el" 
+                placeholder="0"
+            >
+        </header>
+        <div class="bg-[#202737] px-12 py-6">
+            <div class="py-4">
+                <p class="">
+                    Length (Meter/Feet)
+                </p>
+                <p class="text-slate-500" id="length-el"></p>
+            </div>
+            <div class="py-4">
+                <p class="">
+                    Volume (Liters/Gallon)
+                </p>
+                <p class="text-slate-500" id="volume-el"></p>
+            </div>
+            <div class="py-4">
+                <p class="">
+                    Mass (Kilograms/Pounds)
+                </p>
+                <p class="text-slate-500" id="mass-el"></p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>    
+</body>
+</html>
